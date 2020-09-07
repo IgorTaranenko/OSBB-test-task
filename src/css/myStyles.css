@@ -22,3 +22,7 @@
 .wrapper-f-end {
   justify-content: flex-end;
 }
+.center-block {
+  display: inline-block;
+  margin: 0 auto;
+}

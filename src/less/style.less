@@ -68,6 +68,23 @@
 @dark-grey: #6E788D;
 @header-line: #4B5464;
 
+.green-button {
+    border: none;
+    background-color: @green;
+    color: @white;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.section-line {
+    display: block;
+    width: 10rem;
+    height: 1px;
+    background-color: @dark-grey;
+    margin: 1rem auto;
+}
+
 header {
     .osReg();
     .header {
@@ -168,6 +185,7 @@ main {
                 border-radius: 50px;
                 padding: 2rem;
                 margin-top: 4rem;
+                margin-bottom: 3rem;
                 input {
                     font-size: 1.4rem;
                     padding: 1rem;
@@ -182,19 +200,217 @@ main {
             &-name {
                 width: 10rem;
             }
-            &-button {
-                border: none;
-                background-color: @green;
-                color: @white;
-                font-size: 1.4rem;
-                padding: 1rem 2rem;
-                border-radius: 50px;
+        }
+        &-line {
+            &-left {
+                width: 100px;
+                height: 1px;
+                position: absolute;
+                background-color: @white;
+                top: 3rem;
+                left: -100px;
             }
-            .test {
+            &-right {
+                width: 100px;
+                height: 1px;
+                position: absolute;
+                background-color: @white;
+                top: 3rem;
+                right: -100px;    
+            }
+        }
+        &-steps {
+            b {
+                .muliBold();
+                font-size: 2rem;
+                color: @white;
                 display: inline-block;
-                width: 4rem;
-                height: 5rem;
-                background: url(../img/reg-now/reg.png) center no-repeat;
+            }
+            &-item {
+                position: relative;
+                text-align: center;
+                #reg {
+                    top: 12px;
+                    left: 5px;
+                    width: 5rem;
+                    height: 6rem;
+                    background: url(../img/reg-now/reg.png) no-repeat;
+                }
+                #news {
+                    top: 12px;
+                    left: 5px;
+                    width: 6rem;
+                    height: 6rem;
+                    background: url(../img/reg-now/news.png) no-repeat;
+                }
+                #easy {
+                    top: 16px;
+                    left: 5px;
+                    width: 5rem;
+                    height: 6rem;
+                    background: url(../img/reg-now/easy.png) no-repeat;
+                }
+                &-icon {
+                    display: block;
+                    position: relative;
+                }
+                &-title {
+                    font-size: 1.4rem;
+                    color: @white;
+                }                
+            }
+        }
+    }
+    .last-photo-and-utilies {
+        padding: 5rem;
+        .muliReg();
+        h2 {
+            .muliBold();
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: @dark-grey;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+    .last-photo {
+        margin-bottom: 5rem;        
+        p {
+            color: @grey;
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 30px;
+            padding: 0 3rem;
+        }
+        .slider {
+            margin-top: 3rem;
+            &-arrows {
+                margin: 3rem 28rem;
+            }
+            &-item-photo {
+                width: 28rem;
+                height: 20rem;
+            }
+            .Arrow-left {
+                position: relative;
+                width: 50px;
+                height: 1px;
+                background-color: @dark-grey;
+                display: block;
+                div::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    top: -3px;
+                    left: -3.5px;
+                    background-color: @dark-grey;
+                    transform: rotate(-45deg);
+                }
+                div::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    top: 3px;
+                    left: -3.5px;
+                    background-color: @dark-grey;
+                    transform: rotate(45deg);
+                }
+            }
+            .Arrow-right {
+                position: relative;
+                width: 50px;
+                height: 1px;
+                background-color: @dark-grey;
+                display: block;
+                div::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    top: -3px;
+                    right: -3.5px;
+                    background-color: @dark-grey;
+                    transform: rotate(45deg);
+                }
+                div::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    top: 3px;
+                    right: -3.5px;
+                    background-color: @dark-grey;
+                    transform: rotate(-45deg);
+                }
+            }
+            .switch {
+                width: 6px;
+                height: 6px;
+                background-color: @dark-grey;
+                border-radius: 50%;
+                &-select {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border: 1px solid @dark-grey;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .utilities {
+        margin-top: 3rem;
+        .osReg();
+        &-info {
+            display: inline-block;
+            width: 55%;
+            p {
+                font-size: 1.6rem;
+                color: @grey;
+                line-height: 35px;
+                margin: 15px 0;
+            }
+        }
+        .suppliers {
+            width: 40%;
+            display: inline-block;
+            padding: 3rem 5rem;
+            box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
+            border-radius: 5px;
+            h3 {
+                .osBold();
+                color: @dark-grey;
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 1rem;
+                line-height: 35px;
+            }
+            .companies {
+                div {
+                    margin: 2.5rem 0;
+                }
+                .company {
+                    text-decoration: underline;
+                    color: @grey;
+                    font-size: 1.6rem;
+                }
+                .circle {
+                    position: relative;
+                    display: inline-block;
+                    width: 5rem;
+                    height: 5rem;
+                    background: url(../img/last-photo/Circle.png) no-repeat;
+                    background-size: 100%;
+                    margin-right: 2rem;
+                    font-size: 1.6rem;
+                    color: @green;
+                    span {
+                        position: absolute;
+                        top: 30px;
+                        left: 30px;
+                    }
+                }
             }
         }
     }
