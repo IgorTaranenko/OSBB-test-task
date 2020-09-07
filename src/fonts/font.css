@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('Muli-Bold.eot');
+  src: url('Muli-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Muli-Bold.svg#Muli-Bold') format('svg'),
+       url('Muli-Bold.ttf') format('truetype'),
+       url('Muli-Bold.woff') format('woff'),
+       url('Muli-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

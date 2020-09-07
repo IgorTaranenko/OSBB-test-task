@@ -1,0 +1,201 @@
+@import url(myStyles.less);
+// Fonts
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('OpenSans-Regular.eot');
+  src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('OpenSans-Bold.eot');
+  src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+       url('OpenSans-Bold.ttf') format('truetype'),
+       url('OpenSans-Bold.woff') format('woff'),
+       url('OpenSans-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('Muli-Regular.eot');
+  src: url('Muli-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Muli-Regular.svg#Muli-Regular') format('svg'),
+       url('Muli-Regular.ttf') format('truetype'),
+       url('Muli-Regular.woff') format('woff'),
+       url('Muli-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('Muli-Bold.eot');
+  src: url('Muli-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Muli-Bold.svg#Muli-Bold') format('svg'),
+       url('Muli-Bold.ttf') format('truetype'),
+       url('Muli-Bold.woff') format('woff'),
+       url('Muli-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.osReg() {
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+.osBold() {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: bold;
+}
+.muliReg() {
+  font-family: 'Muli-Regular', sans-serif;
+}
+.muliBold() {
+  font-family: 'Muli-Bold', sans-serif;
+  font-weight: bold;
+}
+
+// Colors
+
+@white: #FFFFFF;
+@green: #86BC42;
+@grey: #9CA3AB;
+@dark-grey: #6E788D;
+@header-line: #4B5464;
+
+header {
+    .osReg();
+    .header {
+        &-line {
+            padding: 0 4rem;
+            width: 100%;
+            font-size: 1.4rem;
+            color: @white;
+            background-color: @header-line;
+            .phone-number {
+                margin-right: 3rem;
+                &-img {
+                    display: inline-block;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin-right: .5rem;
+                    background: url(../img/header/phone.png) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+            .email {
+                &-img{
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.1rem;
+                    margin-right: .5rem;
+                    background: url(../img/header/email.png) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+            .title {
+                .osBold();
+                font-weight: 800;
+                strong {
+                    text-transform: uppercase;
+                    color: @green;
+                }
+            }
+            .login {
+                margin-right: 2rem;
+                &-img {
+                    display: inline-block;
+                    width: 3rem;
+                    height: 2rem;
+                    margin-right: 1rem;
+                    background: url(../img/header/login.png) center center no-repeat;
+                }
+            }
+            .reg {
+                &-button {
+                    border: none;
+                    height: 4rem;
+                    background-color: @green;
+                    font-size: 1.6rem;
+                    color: @white;
+                    padding: 0 2.5rem;
+                    .osBold();
+                }
+            }
+        }
+        &-nav {
+            .osReg();
+            font-size: 1.4rem;
+            height: 3.5rem;
+            padding: 0 7rem;
+            &-link {
+                color: @dark-grey;
+                text-decoration: none;
+                &-selected {
+                    color: @green;
+                }
+            }
+        }
+    }
+}
+main {
+    .regist-now {
+        .muliReg();
+        background: url(../img/reg-now/reg-now.png) center no-repeat;
+        background-size: cover;
+        padding: 8rem 12rem;
+        &-form {
+            background: rgba(47, 45, 55, 0.25); 
+            padding: 4rem 5rem;
+            h2 {
+                .muliBold();
+                font-weight: bold;
+                text-align: center;
+                color: @white;
+                font-size: 2.4rem;
+                line-height: 145%;
+                strong {
+                    font-size: 3.4rem;
+                }                
+            }
+            form {
+                background-color: @white;
+                border-radius: 50px;
+                padding: 2rem;
+                margin-top: 4rem;
+                input {
+                    font-size: 1.4rem;
+                    padding: 1rem;
+                    border-radius: 50px;
+                    border: 1px solid #8F8F8F;
+                    margin-right: 1.5rem;
+                }
+                input:focus {
+                    outline: none;
+                }
+            }
+            &-name {
+                width: 10rem;
+            }
+            &-button {
+                border: none;
+                background-color: @green;
+                color: @white;
+                font-size: 1.4rem;
+                padding: 1rem 2rem;
+                border-radius: 50px;
+            }
+            .test {
+                display: inline-block;
+                width: 4rem;
+                height: 5rem;
+                background: url(../img/reg-now/reg.png) center no-repeat;
+            }
+        }
+    }
+}

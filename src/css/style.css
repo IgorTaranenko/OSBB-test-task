@@ -1,0 +1,195 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper-v-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper-g-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrapper-space-beetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper-f-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.wrapper-f-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('OpenSans-Regular.eot');
+  src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('OpenSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('OpenSans-Bold.eot');
+  src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('OpenSans-Bold.svg#OpenSans-Bold') format('svg'), url('OpenSans-Bold.ttf') format('truetype'), url('OpenSans-Bold.woff') format('woff'), url('OpenSans-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('Muli-Regular.eot');
+  src: url('Muli-Regular.eot?#iefix') format('embedded-opentype'), url('Muli-Regular.svg#Muli-Regular') format('svg'), url('Muli-Regular.ttf') format('truetype'), url('Muli-Regular.woff') format('woff'), url('Muli-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('Muli-Bold.eot');
+  src: url('Muli-Bold.eot?#iefix') format('embedded-opentype'), url('Muli-Bold.svg#Muli-Bold') format('svg'), url('Muli-Bold.ttf') format('truetype'), url('Muli-Bold.woff') format('woff'), url('Muli-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+header .header-line {
+  padding: 0 4rem;
+  width: 100%;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: #4b5464;
+}
+header .header-line .phone-number {
+  margin-right: 3rem;
+}
+header .header-line .phone-number-img {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .5rem;
+  background: url(../img/header/phone.png) center center no-repeat;
+  background-size: cover;
+}
+header .header-line .email-img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.1rem;
+  margin-right: .5rem;
+  background: url(../img/header/email.png) center center no-repeat;
+  background-size: cover;
+}
+header .header-line .title {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: bold;
+  font-weight: 800;
+}
+header .header-line .title strong {
+  text-transform: uppercase;
+  color: #86bc42;
+}
+header .header-line .login {
+  margin-right: 2rem;
+}
+header .header-line .login-img {
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background: url(../img/header/login.png) center center no-repeat;
+}
+header .header-line .reg-button {
+  border: none;
+  height: 4rem;
+  background-color: #86bc42;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding: 0 2.5rem;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: bold;
+}
+header .header-nav {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 1.4rem;
+  height: 3.5rem;
+  padding: 0 7rem;
+}
+header .header-nav-link {
+  color: #6e788d;
+  text-decoration: none;
+}
+header .header-nav-link-selected {
+  color: #86bc42;
+}
+main .regist-now {
+  font-family: 'Muli-Regular', sans-serif;
+  background: url(../img/reg-now/reg-now.png) center no-repeat;
+  background-size: cover;
+  padding: 8rem 12rem;
+}
+main .regist-now-form {
+  background: rgba(47, 45, 55, 0.25);
+  padding: 4rem 5rem;
+}
+main .regist-now-form h2 {
+  font-family: 'Muli-Bold', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.4rem;
+  line-height: 145%;
+}
+main .regist-now-form h2 strong {
+  font-size: 3.4rem;
+}
+main .regist-now-form form {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+main .regist-now-form form input {
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 50px;
+  border: 1px solid #8F8F8F;
+  margin-right: 1.5rem;
+}
+main .regist-now-form form input:focus {
+  outline: none;
+}
+main .regist-now-form-name {
+  width: 10rem;
+}
+main .regist-now-form-button {
+  border: none;
+  background-color: #86bc42;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+main .regist-now-form .test {
+  display: inline-block;
+  width: 4rem;
+  height: 5rem;
+  background: url(../img/reg-now/reg.png) center no-repeat;
+}
