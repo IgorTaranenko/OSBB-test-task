@@ -101,7 +101,7 @@ h2 {
     letter-spacing: 0.08em;
 }
 .slider-arrows {
-    margin: 3rem 40rem;
+    margin: 3rem 36%;
 }
 .Arrow-left {
     position: relative;
@@ -252,10 +252,10 @@ main {
         .muliReg();
         background: url(../img/reg-now/reg-now.png) center no-repeat;
         background-size: cover;
-        padding: 8rem 12rem;
+        padding: 8rem 10%;
         &-form {
             background: rgba(47, 45, 55, 0.25); 
-            padding: 4rem 20rem;
+            padding: 4rem 15%;
             h1 {
                 .muliBold();
                 font-weight: bold;
@@ -351,96 +351,97 @@ main {
     .last-photo-and-utilies {
         padding: 5rem;
         position: relative;
-        .muliReg();
         &-img {
             position: absolute;
             top: 40rem;
             right: 0;
         }
-    }
-    .last-photo {
-        margin-bottom: 5rem;        
-        p {
-            color: @grey;
-            text-align: center;
-            font-size: 1.6rem;
-            line-height: 30px;
-            padding: 0 3rem;
-        }
-        .slider {
-            margin-top: 3rem;
-            &-item-photo {
-                width: 32rem;
-            }
-        }
-    }
-    .utilities {
-        margin-top: 3rem;
-        .osReg();
-        &-info {
-            display: inline-block;
-            width: 55%;
+        .last-photo {
+            margin-bottom: 5rem;
+            .muliReg();        
             p {
-                font-size: 1.6rem;
                 color: @grey;
-                line-height: 35px;
-                margin: 15px 0;
+                text-align: center;
+                font-size: 1.6rem;
+                line-height: 30px;
+                padding: 0 3rem;
+            }
+            .slider {
+                margin-top: 3rem;
+                &-item-photo {
+                    width: 32%;
+                }
             }
         }
-        .suppliers {
-            width: 40%;
-            display: inline-block;
-            padding: 3rem 5rem;
-            box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
-            border-radius: 5px;
-            h3 {
-                .osBold();
-                color: @dark-grey;
-                font-size: 1.6rem;
-                text-align: center;
-                margin-bottom: 1rem;
-                line-height: 35px;
-            }
-            .companies {
-                div {
-                    margin: 2.5rem 0;
-                }
-                .company {
-                    text-decoration: underline;
+        .utilities {
+            margin-top: 3rem;
+            &-info {
+                .muliReg();
+                display: inline-block;
+                width: 50%;
+                p {
+                    font-size: 1.6rem;
                     color: @grey;
-                    font-size: 1.6rem;
+                    line-height: 35px;
+                    margin: 15px 0;
                 }
-                .circle {
-                    position: relative;
-                    display: inline-block;
-                    width: 5rem;
-                    height: 5rem;
-                    background: url(../img/last-photo/Circle.png) no-repeat;
-                    background-size: 100%;
-                    margin-right: 2rem;
+            }
+            .suppliers {
+                width: 45%;
+                display: inline-block;
+                padding: 3rem 6%;
+                box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
+                border-radius: 5px;
+                .osReg();
+                h3 {
+                    .osBold();
+                    color: @dark-grey;
                     font-size: 1.6rem;
-                    color: @green;
-                    span {
-                        position: absolute;
-                        top: 30px;
-                        left: 32px;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    line-height: 35px;
+                }
+                .companies {
+                    div {
+                        margin: 2.5rem 0;
+                    }
+                    .company {
+                        text-decoration: underline;
+                        color: @grey;
+                        font-size: 1.6rem;
+                        padding-left: 2rem;
+                    }
+                    .circle {
+                        position: relative;
+                        display: inline-block;
+                        width: 5rem;
+                        height: 5rem;
+                        background: url(../img/last-photo/Circle.png) no-repeat;
+                        background-size: 100%;
+                        font-size: 1.6rem;
+                        color: @green;
+                        span {
+                            position: absolute;
+                            top: 40%;
+                            left: 40%;
+                        }
                     }
                 }
             }
         }
-    }
+    }    
     .rates {
         .osReg();
         background: url(../img/rates/bg.png) no-repeat;
         background-size: cover;
-        padding: 5rem 13rem;
+        padding: 5rem 10%;
         &-form {
-            padding: 3rem;
+            padding: 3rem 7%;
             background: rgba(255, 255, 255, 0.94);
             border: 1px solid #86BC42;
             border-radius: 5px;
             &-inputs {
-                width: 45%;
+                width: 50%;
                 h4 {
                     color: @dark-grey;
                     .osBold();
@@ -452,7 +453,7 @@ main {
                     color: @dark-grey;
                 }
                 .num-input {
-                    width: 100%;
+                    width: 80%;
                     border: 1px solid @dark-grey;
                     border-radius: 5px;
                     padding: 1rem 2rem;
@@ -505,7 +506,7 @@ main {
             &-info {
                 width: 45%;
                 padding-top: 2rem;
-                span {
+                span, p {
                     display: block;
                     font-size: 1.6rem;
                     color: @dark-grey;
@@ -517,18 +518,6 @@ main {
                     font-size: 1.8rem;
                 }
                 .attention {
-                    margin-right: 3rem;
-                    display: inline-block;
-                    width: 7.5rem;
-                    height: 3rem;
-                    border: 1px solid @green;
-                    border-radius: 50%;
-                    font-size: 2.6rem;
-                    text-align: center;
-                    color: @green;
-                    span {
-                        font-size: 1.6rem;
-                    }
                     &-box {
                         margin-top: 3rem;
                         strong {
@@ -536,6 +525,23 @@ main {
                             font-weight: normal;
                             color: @green;
                         }
+                    }
+                    &-icon {
+                        width: 6rem;
+                        span {
+                            width: 3rem;
+                            height: 3rem;
+                            border: 1px solid @green;
+                            border-radius: 50%;
+                            font-size: 2.6rem;
+                            text-align: center;
+                            color: @green;
+                        }
+                    }
+                    &-text {
+                        width: auto;
+                        font-size: 1.6rem;
+                        padding-left: 2rem;
                     }
                 }
             }
@@ -545,6 +551,7 @@ main {
         padding: 5rem;
         padding-right: 0;
         position: relative;
+        .muliReg();
         &-bg {
             position: absolute;
             top: 40rem;
@@ -561,11 +568,10 @@ main {
             background-color: @green;
 
         }
-        .osReg();
         &-slider {
             margin-top: 3rem;
             &-info {
-                width: 40%;
+                width: 45%;
                 h4 {
                     .muliBold();
                     color: @dark-grey;
@@ -594,7 +600,7 @@ main {
                 }
             }
             &-photo {
-                width: 50%;
+                width: 52%;
                 img {
                     width: 100%;
                 }
@@ -603,11 +609,11 @@ main {
     }
 }
 footer {
-    .muliReg();
+    // .muliReg();
     .footer {
         &-title {
             h3 {
-                .muliBold();
+                .osBold();
                 color: @dark-grey;
                 text-align: center;
                 font-size: 2rem;
@@ -640,8 +646,10 @@ footer {
             }
         }
         &-text {
+            .muliReg();
             color: @grey;
             p {
+                font-size: 1.2rem;
                 margin-bottom: 1rem;
             }
         }
@@ -662,10 +670,10 @@ footer {
                 background-color: @white;
                 position: absolute;
                 top: 6rem;
-                left: 50rem;
+                left: 53%;
             }
             position: relative;
-            .osReg();
+            .osReg() !important;
             width: 75%;
             padding: 3rem 8rem;
             background-color: @header-line;
@@ -748,4 +756,57 @@ footer {
             }
         }
     }    
+}
+@media (max-width: 1680px) {
+    main {
+        .rates {
+            padding: 5rem 5%;
+            &-form {
+                padding: 5rem 5%;
+            }
+        }
+        .utilities {
+            .suppliers {
+                padding: 3rem 3% !important;
+            }
+        }
+    }
+}
+@media (max-width: 1440px) {
+    main {
+        // section
+        .last-photo-and-utilies {
+            .utilities {
+                .suppliers {
+                    .companies {
+                        #comp1 span {
+                            top: 33%;
+                        }
+                        #comp2 span {
+                            top: 35%;
+                        }
+                    }
+                }
+            }
+        }
+        // section 
+        .rates {
+            &-form {
+                padding: 5rem 3%;
+            }
+        }
+        // section
+        .last-news {
+            &-slider {
+                &-info {
+                    .info-text {
+                        font-size: 1.4rem;
+                    }
+                    .green-title {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
 }

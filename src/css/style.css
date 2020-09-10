@@ -106,7 +106,7 @@ h2 {
   letter-spacing: 0.08em;
 }
 .slider-arrows {
-  margin: 3rem 40rem;
+  margin: 3rem 36%;
 }
 .Arrow-left {
   position: relative;
@@ -255,11 +255,11 @@ main .regist-now {
   font-family: 'Muli-Regular', sans-serif;
   background: url(../img/reg-now/reg-now.png) center no-repeat;
   background-size: cover;
-  padding: 8rem 12rem;
+  padding: 8rem 10%;
 }
 main .regist-now-form {
   background: rgba(47, 45, 55, 0.25);
-  padding: 4rem 20rem;
+  padding: 4rem 15%;
 }
 main .regist-now-form h1 {
   font-family: 'Muli-Bold', sans-serif;
@@ -351,52 +351,53 @@ main .regist-now-steps-item-title {
 main .last-photo-and-utilies {
   padding: 5rem;
   position: relative;
-  font-family: 'Muli-Regular', sans-serif;
 }
 main .last-photo-and-utilies-img {
   position: absolute;
   top: 40rem;
   right: 0;
 }
-main .last-photo {
+main .last-photo-and-utilies .last-photo {
   margin-bottom: 5rem;
+  font-family: 'Muli-Regular', sans-serif;
 }
-main .last-photo p {
+main .last-photo-and-utilies .last-photo p {
   color: #9ca3ab;
   text-align: center;
   font-size: 1.6rem;
   line-height: 30px;
   padding: 0 3rem;
 }
-main .last-photo .slider {
+main .last-photo-and-utilies .last-photo .slider {
   margin-top: 3rem;
 }
-main .last-photo .slider-item-photo {
-  width: 32rem;
+main .last-photo-and-utilies .last-photo .slider-item-photo {
+  width: 32%;
 }
-main .utilities {
+main .last-photo-and-utilies .utilities {
   margin-top: 3rem;
-  font-family: 'OpenSans-Regular', sans-serif;
 }
-main .utilities-info {
+main .last-photo-and-utilies .utilities-info {
+  font-family: 'Muli-Regular', sans-serif;
   display: inline-block;
-  width: 55%;
+  width: 50%;
 }
-main .utilities-info p {
+main .last-photo-and-utilies .utilities-info p {
   font-size: 1.6rem;
   color: #9ca3ab;
   line-height: 35px;
   margin: 15px 0;
 }
-main .utilities .suppliers {
-  width: 40%;
+main .last-photo-and-utilies .utilities .suppliers {
+  width: 45%;
   display: inline-block;
-  padding: 3rem 5rem;
+  padding: 3rem 6%;
   -webkit-box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
           box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
   border-radius: 5px;
+  font-family: 'OpenSans-Regular', sans-serif;
 }
-main .utilities .suppliers h3 {
+main .last-photo-and-utilies .utilities .suppliers h3 {
   font-family: 'OpenSans-Bold', sans-serif;
   font-weight: bold;
   color: #6e788d;
@@ -405,44 +406,44 @@ main .utilities .suppliers h3 {
   margin-bottom: 1rem;
   line-height: 35px;
 }
-main .utilities .suppliers .companies div {
+main .last-photo-and-utilies .utilities .suppliers .companies div {
   margin: 2.5rem 0;
 }
-main .utilities .suppliers .companies .company {
+main .last-photo-and-utilies .utilities .suppliers .companies .company {
   text-decoration: underline;
   color: #9ca3ab;
   font-size: 1.6rem;
+  padding-left: 2rem;
 }
-main .utilities .suppliers .companies .circle {
+main .last-photo-and-utilies .utilities .suppliers .companies .circle {
   position: relative;
   display: inline-block;
   width: 5rem;
   height: 5rem;
   background: url(../img/last-photo/Circle.png) no-repeat;
   background-size: 100%;
-  margin-right: 2rem;
   font-size: 1.6rem;
   color: #86bc42;
 }
-main .utilities .suppliers .companies .circle span {
+main .last-photo-and-utilies .utilities .suppliers .companies .circle span {
   position: absolute;
-  top: 30px;
-  left: 32px;
+  top: 40%;
+  left: 40%;
 }
 main .rates {
   font-family: 'OpenSans-Regular', sans-serif;
   background: url(../img/rates/bg.png) no-repeat;
   background-size: cover;
-  padding: 5rem 13rem;
+  padding: 5rem 10%;
 }
 main .rates-form {
-  padding: 3rem;
+  padding: 3rem 7%;
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid #86BC42;
   border-radius: 5px;
 }
 main .rates-form-inputs {
-  width: 45%;
+  width: 50%;
 }
 main .rates-form-inputs h4 {
   color: #6e788d;
@@ -457,7 +458,7 @@ main .rates-form-inputs label {
   color: #6e788d;
 }
 main .rates-form-inputs .num-input {
-  width: 100%;
+  width: 80%;
   border: 1px solid #6e788d;
   border-radius: 5px;
   padding: 1rem 2rem;
@@ -509,7 +510,8 @@ main .rates-form-info {
   width: 45%;
   padding-top: 2rem;
 }
-main .rates-form-info span {
+main .rates-form-info span,
+main .rates-form-info p {
   display: block;
   font-size: 1.6rem;
   color: #6e788d;
@@ -521,20 +523,6 @@ main .rates-form-info strong {
   color: #6e788d;
   font-size: 1.8rem;
 }
-main .rates-form-info .attention {
-  margin-right: 3rem;
-  display: inline-block;
-  width: 7.5rem;
-  height: 3rem;
-  border: 1px solid #86bc42;
-  border-radius: 50%;
-  font-size: 2.6rem;
-  text-align: center;
-  color: #86bc42;
-}
-main .rates-form-info .attention span {
-  font-size: 1.6rem;
-}
 main .rates-form-info .attention-box {
   margin-top: 3rem;
 }
@@ -543,11 +531,28 @@ main .rates-form-info .attention-box strong {
   font-weight: normal;
   color: #86bc42;
 }
+main .rates-form-info .attention-icon {
+  width: 6rem;
+}
+main .rates-form-info .attention-icon span {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #86bc42;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #86bc42;
+}
+main .rates-form-info .attention-text {
+  width: auto;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
 main .last-news {
   padding: 5rem;
   padding-right: 0;
   position: relative;
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: 'Muli-Regular', sans-serif;
 }
 main .last-news-bg {
   position: absolute;
@@ -568,7 +573,7 @@ main .last-news-slider {
   margin-top: 3rem;
 }
 main .last-news-slider-info {
-  width: 40%;
+  width: 45%;
 }
 main .last-news-slider-info h4 {
   font-family: 'Muli-Bold', sans-serif;
@@ -598,20 +603,17 @@ main .last-news-slider-info .info-text .green-arrow {
   background: #86bc42;
 }
 main .last-news-slider-photo {
-  width: 50%;
+  width: 52%;
 }
 main .last-news-slider-photo img {
   width: 100%;
-}
-footer {
-  font-family: 'Muli-Regular', sans-serif;
 }
 footer .footer-title {
   padding: 1rem 3rem;
   width: 25%;
 }
 footer .footer-title h3 {
-  font-family: 'Muli-Bold', sans-serif;
+  font-family: 'OpenSans-Bold', sans-serif;
   font-weight: bold;
   color: #6e788d;
   text-align: center;
@@ -642,9 +644,11 @@ footer .footer-title .img-telegram {
   background: url(../img/footer/telegram.png) no-repeat;
 }
 footer .footer-text {
+  font-family: 'Muli-Regular', sans-serif;
   color: #9ca3ab;
 }
 footer .footer-text p {
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 footer .footer-nav-bg {
@@ -658,7 +662,7 @@ footer .footer-nav-bg {
 }
 footer .footer-nav-contacts {
   position: relative;
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif !important;
   width: 75%;
   padding: 3rem 8rem;
   background-color: #4b5464;
@@ -670,7 +674,7 @@ footer .footer-nav-contacts .v-line {
   background-color: #ffffff;
   position: absolute;
   top: 6rem;
-  left: 50rem;
+  left: 53%;
 }
 footer .footer-nav-contacts h4 {
   font-family: 'Muli-Bold', sans-serif;
@@ -750,4 +754,32 @@ footer .footer-nav-contacts .contacts-item .email-img {
   background: url(../img/footer/email.png) no-repeat;
   background-size: 100%;
   margin-right: 1rem;
+}
+@media (max-width: 1680px) {
+  main .rates {
+    padding: 5rem 5%;
+  }
+  main .rates-form {
+    padding: 5rem 5%;
+  }
+  main .utilities .suppliers {
+    padding: 3rem 3% !important;
+  }
+}
+@media (max-width: 1440px) {
+  main .last-photo-and-utilies .utilities .suppliers .companies #comp1 span {
+    top: 33%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies #comp2 span {
+    top: 35%;
+  }
+  main .rates-form {
+    padding: 5rem 3%;
+  }
+  main .last-news-slider-info .info-text {
+    font-size: 1.4rem;
+  }
+  main .last-news-slider-info .green-title {
+    font-size: 1.4rem;
+  }
 }
