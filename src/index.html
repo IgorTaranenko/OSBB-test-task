@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div class="header-line wrapper wrapper-row wrapper-space-beetween">
-			<div class="wrapper wrapper-v-center">
+			<div class="phone-email wrapper wrapper-v-center">
 				<div class="phone-number">
 					<span class="phone-number-img"></span>
 					<span>+38 (000) 000 00 00</span>
@@ -23,13 +23,34 @@
 			<div class="title md-title wrapper wrapper-v-center">
 				<h3><strong>Осбб</strong> "Тест"</h3>
 			</div>
-			<div class="wrapper wrapper-v-center">
-				<div class="login wrapper wrapper-v-center">
+			<div class="login-reg wrapper wrapper-v-center wrapper-f-end">
+				<div class="login wrapper wrapper-v-center wrapper-f-end">
 					<span class="login-img"></span>
 					<span>Вход</span>
 				</div>
 				<div class="reg">
 					<button class="reg-button">Регистрация</button>
+				</div>
+			</div>
+		</div>
+		<div class="header-line-mobile wrapper wrapper-col">
+			<div class="phone-button wrapper wrapper-row wrapper-space-beetween wrapper-v-center">
+				<div class="phone-number wrapper wrapper-v-center">
+					<span class="phone-number-img"></span>
+					<span>+38 (000) 000 00 00</span>
+				</div>
+				<div class="reg">
+					<button class="reg-button">Регистрация</button>
+				</div>
+			</div>
+			<div class="email-login wrapper wrapper-row wrapper-space-beetween wrapper-v-center">
+				<div class="email wrapper wrapper-v-center">
+					<span class="email-img"></span>
+					<span>test@i.ua</span>
+				</div>
+				<div class="login wrapper wrapper-v-center">
+					<span class="login-img"></span>
+					<span>Вход</span>
 				</div>
 			</div>
 		</div>
@@ -56,13 +77,22 @@
 		<section class="regist-now">
 			<div class="regist-now-form">
 				<h1><strong>Зарегистрируйтесь сейчас</strong> <br>чтобы знать новости первым!</h1>
-				<form action="/">
+				<form class="regist-now-form-md" action="/">
 					<div class="wrapper wrapper-row wrapper-space-beetween">
 						<input class="regist-now-form-name" type="text" placeholder="Ваше имя">
 						<input class="regist-now-form-phone" type="text" placeholder="Ваш номер телефона">
 						<button class="green-button">ГОТОВО!</button>
 					</div>
 				</form>
+				<form action="/" class="regist-now-form-mobile">
+					<div class="wrapper wrapper-row wrapper-space-beetween">
+						<input class="regist-now-form-mobile-name" type="text" placeholder="Ваше имя">
+						<input class="regist-now-form-mobile-phone" type="text" placeholder="Ваш номер телефона">
+					</div>
+				</form>
+					<div class="regist-now-form-mobile-button wrapper wrapper-g-center">
+						<button class="green-button">ГОТОВО!</button>
+					</div>
 				<div class="regist-now-steps wrapper wrapper-row wrapper-space-beetween">
 					<div class="regist-now-steps-item">
 						<div class="wrapper wrapper-g-center">
@@ -141,24 +171,24 @@
 				<div class="suppliers">
 					<h3>ПОСТАЧАЛЬНИКИ ПОСЛУГ <br> (ПОДАТИ ПОКАЗНИКИ)</h3>
 					<span class="section-line"></span>
-					<div class="companies">
-						<div class="wrapper wrapper-row wrapper-v-center">
-							<span id="comp1" class="circle">
+					<div class="companies wrapper wrapper-col">
+						<div class="company wrapper wrapper-v-center">
+							<div id="comp1" class="circle">
 								<span>1</span>
-							</span>
-							<span class="company">Київенерго (електропостачання)</span>
+							</div>
+							<div class="company-name">Київенерго (електропостачання)</div>
 						</div>
-						<div class="wrapper wrapper-row wrapper-v-center">
+						<div class="company wrapper wrapper-row wrapper-v-center">
 							<span id="comp1" class="circle">
 								<span>2</span>
 							</span>
-							<span class="company">Київтеплоенерго (тепло та ГВП)</span>
+							<div class="company-name">Київтеплоенерго (тепло та ГВП)</div>
 						</div>
-						<div class="wrapper wrapper-row wrapper-v-center">
+						<div class="company wrapper wrapper-row wrapper-v-center">
 							<span id="comp2" class="circle">
 								<span>3</span>
 							</span>
-							<span class="company">Київводоканал (ХВП)</span>
+							<div class="company-name">Київводоканал (ХВП)</div>
 						</div>
 					</div>
 				</div>

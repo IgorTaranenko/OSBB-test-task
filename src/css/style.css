@@ -2,6 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 .wrapper-v-center {
   -webkit-box-align: center;
@@ -23,6 +24,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.wrapper-col-rev {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 .wrapper-row {
   -webkit-box-orient: horizontal;
@@ -96,7 +103,7 @@
   display: block;
   width: 10rem;
   height: 1px;
-  background-color: #6e788d;
+  background-color: #9ca3ab;
   margin: 1rem auto;
   margin-bottom: 2.5rem;
 }
@@ -111,7 +118,8 @@ h2 {
   letter-spacing: 0.08em;
 }
 .slider-arrows {
-  margin: 3rem 36%;
+  margin: 2rem auto;
+  width: 30%;
 }
 .Arrow-left {
   position: relative;
@@ -198,12 +206,27 @@ header .title strong {
   text-transform: uppercase;
   color: #86bc42;
 }
+header .header-line-mobile {
+  display: none;
+}
 header .header-line {
   padding: 0 4rem;
   width: 100%;
   font-size: 1.4rem;
   color: #ffffff;
   background-color: #4b5464;
+}
+header .header-line .phone-email {
+  width: 35%;
+}
+header .header-line .title {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .header-line .login-reg {
+  width: 35%;
 }
 header .header-line .phone-number {
   margin-right: 3rem;
@@ -320,6 +343,12 @@ main .regist-now-form form input:focus {
 main .regist-now-form-name {
   width: 10rem;
 }
+main .regist-now-form-mobile {
+  display: none;
+}
+main .regist-now-form-mobile-button {
+  display: none;
+}
 main .regist-now-line-left {
   width: 100px;
   height: 1px;
@@ -418,7 +447,6 @@ main .last-photo-and-utilies .utilities-info p {
 }
 main .last-photo-and-utilies .utilities .suppliers {
   width: 45%;
-  display: inline-block;
   padding: 3rem 6%;
   -webkit-box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
           box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
@@ -434,21 +462,25 @@ main .last-photo-and-utilies .utilities .suppliers h3 {
   margin-bottom: 1rem;
   line-height: 35px;
 }
-main .last-photo-and-utilies .utilities .suppliers .companies div {
-  margin: 2.5rem 0;
-}
 main .last-photo-and-utilies .utilities .suppliers .companies .company {
+  margin-bottom: 2rem;
+}
+main .last-photo-and-utilies .utilities .suppliers .companies .company-name {
+  width: 78%;
   text-decoration: underline;
   color: #9ca3ab;
   font-size: 1.6rem;
   padding-left: 2rem;
 }
 main .last-photo-and-utilies .utilities .suppliers .companies .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  display: inline-block;
-  width: 5rem;
-  height: 5rem;
-  background: url(../img/last-photo/Circle.png) no-repeat;
+  width: 18%;
+  height: 6rem;
+  margin: auto 0;
+  background: url(../img/last-photo/Circle.png) center no-repeat;
   background-size: 100%;
   font-size: 1.6rem;
   color: #86bc42;
@@ -807,13 +839,7 @@ footer .footer-nav-contacts .contacts-item .email-img {
     padding: 3rem 3%;
   }
 }
-@media (max-width: 1440px) {
-  main .last-photo-and-utilies .utilities .suppliers .companies #comp1 span {
-    top: 33%;
-  }
-  main .last-photo-and-utilies .utilities .suppliers .companies #comp2 span {
-    top: 35%;
-  }
+@media (max-width: 1366px) {
   main .rates-form {
     padding: 5rem 3%;
   }
@@ -830,6 +856,10 @@ footer .footer-nav-contacts .contacts-item .email-img {
   }
   .slider-arrows {
     margin: 3rem 30%;
+  }
+  .green-line {
+    top: 13rem;
+    width: 10rem;
   }
   header .md-title {
     display: none;
@@ -871,8 +901,15 @@ footer .footer-nav-contacts .contacts-item .email-img {
     margin-bottom: 1rem;
   }
   main .last-photo-and-utilies .utilities .suppliers {
-    width: auto;
-    margin: 0 5rem;
+    width: 70%;
+    margin: 0rem auto;
+    padding: 3rem 10%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies {
+    width: 100%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies .company .circle {
+    width: 15%;
   }
   main .rates-form {
     padding-top: 2rem;
@@ -908,11 +945,7 @@ footer .footer-nav-contacts .contacts-item .email-img {
     font-size: 1.2rem;
   }
   main .last-news {
-    padding: 3rem 10rem;
-  }
-  main .last-news .green-line {
-    top: 13rem;
-    width: 10rem;
+    padding: 3rem 10%;
   }
   main .last-news-bg {
     top: 84rem;
@@ -989,11 +1022,18 @@ footer .footer-nav-contacts .contacts-item .email-img {
 }
 @media (max-width: 1000px) {
   .slider-arrows {
-    margin: 3rem 24%;
+    margin: 3rem auto;
+    width: 50%;
   }
   header .header-line {
     padding: 0;
     padding-left: 1rem;
+  }
+  header .header-line .phone-email {
+    width: 50%;
+  }
+  header .header-line .login-reg {
+    width: 50%;
   }
   header .header-line .phone-number {
     margin-right: 0.5rem;
@@ -1033,11 +1073,15 @@ footer .footer-nav-contacts .contacts-item .email-img {
     padding: 0;
   }
   main .last-photo-and-utilies .last-photo .slider-arrows {
-    margin: 1.5rem 30%;
+    margin: 1.5rem auto;
   }
   main .last-photo-and-utilies .utilities .suppliers {
-    margin: 1rem 2rem;
-    padding: 1rem 3rem;
+    width: 100%;
+    margin: 0rem auto;
+    padding: 3rem 13%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies .company .circle {
+    width: 12%;
   }
   main .rates-form h2 {
     margin-bottom: 2rem;
@@ -1090,5 +1134,188 @@ footer .footer-nav-contacts .contacts-item .email-img {
   }
   footer .footer-nav-contacts nav a:after {
     top: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .green-button {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .section-line {
+    margin-bottom: 1.5rem;
+  }
+  .slider-arrows {
+    width: 50%;
+  }
+  header {
+    font-family: 'OpenSans-Regular', sans-serif;
+  }
+  header .header-line {
+    display: none;
+  }
+  header .header-line-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #4b5464;
+    color: #ffffff;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  header .header-line-mobile .phone-button .phone-number {
+    font-weight: bold;
+  }
+  header .header-line-mobile .phone-button .phone-number-img {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    background: url(../img/header/phone.png) center center no-repeat;
+  }
+  header .header-line-mobile .phone-button .reg-button {
+    border: none;
+    height: 2.6rem;
+    background-color: #86bc42;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 0 1.4rem;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: bold;
+  }
+  header .header-line-mobile .email-login {
+    margin-top: 1rem;
+  }
+  header .header-line-mobile .email-login .email {
+    width: 65%;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: bold;
+  }
+  header .header-line-mobile .email-login .email-img {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-right: .5rem;
+    background: url(../img/header/email.png) center center no-repeat;
+    background-size: cover;
+  }
+  header .header-line-mobile .email-login .login {
+    width: 35%;
+  }
+  header .header-line-mobile .email-login .login-img {
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    margin-right: 1rem;
+    background: url(../img/header/login.png) center center no-repeat;
+  }
+  header .header-nav-mini-screen .menu-line {
+    width: 3rem;
+  }
+  header .header-nav-mini-screen .title {
+    font-size: 2rem;
+  }
+  main .regist-now-form h1 {
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  main .regist-now-form h1 strong {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  main .regist-now-form .regist-now-form-md {
+    display: none;
+  }
+  main .regist-now-form .regist-now-form-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2rem 0;
+    padding: 0.7rem;
+  }
+  main .regist-now-form .regist-now-form-mobile input {
+    font-size: 0.8rem;
+    padding-left: 0.4rem;
+  }
+  main .regist-now-form .regist-now-form-mobile-name {
+    width: 35%;
+    margin-right: 3px;
+  }
+  main .regist-now-form .regist-now-form-mobile-phone {
+    width: 60%;
+    margin-left: 3px;
+  }
+  main .regist-now-form .regist-now-form-mobile-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  main .regist-now-form .regist-now-form-mobile-button button {
+    border: 7px solid #ffffff;
+    border-radius: 50px;
+  }
+  main .regist-now-form .regist-now-steps {
+    display: none;
+  }
+  main .last-photo-and-utilies-img {
+    display: none;
+  }
+  main .last-photo-and-utilies .last-photo {
+    margin-bottom: 4rem;
+  }
+  main .last-photo-and-utilies .last-photo p {
+    font-size: 1.2rem;
+  }
+  main .last-photo-and-utilies .last-photo .slider {
+    margin-top: 1.5rem;
+  }
+  main .last-photo-and-utilies .last-photo .slider-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  main .last-photo-and-utilies .last-photo .slider-item-photo {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  main .last-photo-and-utilies .last-photo .slider-arrows {
+    display: none;
+  }
+  main .last-photo-and-utilies .utilities {
+    margin-top: 1rem;
+  }
+  main .last-photo-and-utilies .utilities-info {
+    width: 100%;
+  }
+  main .last-photo-and-utilies .utilities-info p {
+    font-size: 1.1rem;
+    line-height: 18px;
+    margin-bottom: 1rem;
+  }
+  main .last-photo-and-utilies .utilities .suppliers {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers h3 {
+    font-size: 1.3rem;
+    line-height: 25px;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies .company {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+  main .last-photo-and-utilies .utilities .suppliers .companies .circle {
+    font-size: 1.3rem;
+  }
+  main .last-news .green-line {
+    width: 4rem;
+    top: 13%;
   }
 }

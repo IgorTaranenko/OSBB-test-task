@@ -1,4 +1,5 @@
 @import url(myStyles.less);
+
 // Fonts
 @font-face {
   font-family: 'OpenSans-Regular';
@@ -86,7 +87,7 @@
     display: block;
     width: 10rem;
     height: 1px;
-    background-color: @dark-grey;
+    background-color: @grey;
     margin: 1rem auto;
     margin-bottom: 2.5rem;
 }
@@ -101,7 +102,8 @@ h2 {
     letter-spacing: 0.08em;
 }
 .slider-arrows {
-    margin: 3rem 36%;
+    margin: 2rem auto;
+    width: 30%;
 }
 .Arrow-left {
     position: relative;
@@ -184,12 +186,25 @@ header {
             }
         }
     .header {
+        &-line-mobile {
+            display: none;
+        }
         &-line {
             padding: 0 4rem;
             width: 100%;
             font-size: 1.4rem;
             color: @white;
             background-color: @header-line;
+            .phone-email {
+                width: 35%;
+            }
+            .title {
+                width: 30%;
+                justify-content: center;
+            }
+            .login-reg {
+                width: 35%;
+            }
             .phone-number {
                 margin-right: 3rem;
                 &-img {
@@ -306,6 +321,12 @@ main {
                 width: 10rem;
             }
         }
+        &-form-mobile {
+            display: none;
+            &-button {
+                display: none;
+            }
+        }
         &-line {
             &-left {
                 width: 100px;
@@ -406,7 +427,6 @@ main {
             }
             .suppliers {
                 width: 45%;
-                display: inline-block;
                 padding: 3rem 6%;
                 box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
                 border-radius: 5px;
@@ -420,21 +440,23 @@ main {
                     line-height: 35px;
                 }
                 .companies {
-                    div {
-                        margin: 2.5rem 0;
-                    }
                     .company {
-                        text-decoration: underline;
-                        color: @grey;
-                        font-size: 1.6rem;
-                        padding-left: 2rem;
+                        margin-bottom: 2rem;
+                        &-name {
+                            width: 78%;
+                            text-decoration: underline;
+                            color: @grey;
+                            font-size: 1.6rem;
+                            padding-left: 2rem;
+                        }
                     }
                     .circle {
+                        display: flex;
                         position: relative;
-                        display: inline-block;
-                        width: 5rem;
-                        height: 5rem;
-                        background: url(../img/last-photo/Circle.png) no-repeat;
+                        width: 18%;
+                        height: 6rem;
+                        margin: auto 0;
+                        background: url(../img/last-photo/Circle.png) center no-repeat;
                         background-size: 100%;
                         font-size: 1.6rem;
                         color: @green;
@@ -786,6 +808,7 @@ footer {
         }
     }    
 }
+
 @media (max-width: 1680px) {
     main {
         .rates {
@@ -803,23 +826,8 @@ footer {
         }
     }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
     main {
-        // section
-        .last-photo-and-utilies {
-            .utilities {
-                .suppliers {
-                    .companies {
-                        #comp1 span {
-                            top: 33%;
-                        }
-                        #comp2 span {
-                            top: 35%;
-                        }
-                    }
-                }
-            }
-        }
         // section 
         .rates {
             &-form {
@@ -847,6 +855,10 @@ footer {
     }
     .slider-arrows {
         margin: 3rem 30%;
+    }
+    .green-line {
+        top: 13rem;
+        width: 10rem;
     }
     header {
         .md-title {
@@ -888,8 +900,17 @@ footer {
                     margin-bottom: 1rem;
                 }
                 .suppliers {
-                    width: auto;
-                    margin: 0 5rem;
+                    width: 70%;
+                    margin: 0rem auto;
+                    padding: 3rem 10%;
+                    .companies {
+                        width: 100%;
+                        .company {
+                            .circle {
+                                width: 15%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -934,16 +955,13 @@ footer {
             }
         }
         .last-news {
-            padding: 3rem 10rem;
-            .green-line {
-                top: 13rem;
-                width: 10rem;
-            }
+            padding: 3rem 10%;
             &-bg {
                 top: 84rem;
             }
             &-slider {
                 flex-direction: column-reverse;
+
                 &-info {
                     width: 100%;
                     .info-text {
@@ -1003,12 +1021,19 @@ footer {
 }
 @media (max-width: 1000px) {
     .slider-arrows {
-        margin: 3rem 24%;
+        margin: 3rem auto;
+        width: 50%;
     }
     header {
         .header-line {
             padding: 0;
             padding-left: 1rem;
+            .phone-email {
+                width: 50%;
+            }
+            .login-reg {
+                width: 50%;
+            }
             .phone-number {
                 margin-right: 0.5rem;
                 font-size: 1.1rem;
@@ -1061,14 +1086,22 @@ footer {
                 }
                 .slider {
                     &-arrows {
-                        margin: 1.5rem 30%;
+                        margin: 1.5rem auto;
                     }
                 }
             }
             .utilities {
                 .suppliers {
-                    margin: 1rem 2rem;
-                    padding: 1rem 3rem;
+                    width: 100%;
+                    margin: 0rem auto;
+                    padding: 3rem 13%;
+                    .companies {
+                        .company {
+                            .circle {
+                                width: 12%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1149,5 +1182,199 @@ footer {
                 }
             }
         }        
+    }
+}
+@media (max-width: 767px) {
+    .green-button {
+        .osBold();
+        font-size: 0.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .section-line {
+        margin-bottom: 1.5rem;
+    }
+    .slider-arrows {
+        width: 50%;
+    }
+    header {
+        .osReg();
+        .header {
+            &-line {
+                display: none;
+            }
+            &-line-mobile {
+                display: flex;
+                background-color: @header-line;
+                color: @white;
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+                .phone-button {
+                    .phone-number {
+                        font-weight: bold;
+                        &-img {
+                            display: inline-block;
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            margin-right: 0.5rem;
+                            background: url(../img/header/phone.png) center center no-repeat;
+                        }
+                    }
+                    .reg {
+                        &-button {
+                            border: none;
+                            height: 2.6rem;
+                            background-color: @green;
+                            font-size: 1.2rem;
+                            color: @white;
+                            padding: 0 1.4rem;
+                            .osBold();
+                        }
+                    }
+                }
+                .email-login {
+                    margin-top: 1rem;
+                    .email {
+                        width: 65%;
+                        .osBold();
+                        &-img{
+                            display: inline-block;
+                            width: 1.5rem;
+                            height: 1.1rem;
+                            margin-right: .5rem;
+                            background: url(../img/header/email.png) center center no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    .login {
+                        width: 35%;
+                        &-img {
+                            display: inline-block;
+                            width: 3rem;
+                            height: 2rem;
+                            margin-right: 1rem;
+                            background: url(../img/header/login.png) center center no-repeat;
+                        }
+                    }
+                }
+            }
+            &-nav-mini-screen {
+                .menu {
+                    &-line {
+                        width: 3rem;
+                    }
+                }
+                .title {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    main {
+        .regist-now {
+            &-form {
+                h1 {
+                    font-weight: normal;
+                    font-size: 1.2rem;
+                    strong {
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                    }
+                }
+                .regist-now-form-md {
+                    display: none;
+                }
+                .regist-now-form-mobile {
+                    display: flex;
+                    margin: 2rem 0;
+                    padding: 0.7rem;
+                    input {
+                        font-size: 0.8rem;
+                        padding-left: 0.4rem;
+                    }
+                    &-name {
+                        width: 35%;
+                        margin-right: 3px;
+                    }
+                    &-phone {
+                        width: 60%;
+                        margin-left: 3px;
+                    }
+                    &-button {
+                        display: flex;
+                        font-size: 0.8rem;
+                        button {
+                            border: 7px solid @white;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+                .regist-now-steps {
+                    display: none;
+                }
+            }
+        }
+        .last-photo-and-utilies {
+            &-img {
+                display: none;
+            }
+            .last-photo {
+                margin-bottom: 4rem;
+                p {
+                    font-size: 1.2rem;
+                }
+                .slider {
+                    margin-top: 1.5rem;
+                    &-item {
+                        flex-direction: column;
+                        margin-bottom: 1.5rem;
+                        &-photo {
+                            width: 100%;
+                            margin: 0.5rem 0;
+                        }
+                    }
+                    &-arrows {
+                        display: none;
+                    }
+                }
+            }
+            .utilities {
+                margin-top: 1rem;
+                &-info {
+                    width: 100%;
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 18px;
+                        margin-bottom: 1rem;
+                    }
+                }
+                .suppliers {
+                    margin: 0;
+                    padding: 1rem;
+                    width: 100%;
+                    h3 {
+                        font-size: 1.3rem;
+                        line-height: 25px;
+                    }
+                    .companies {
+                        .company {
+                            font-size: 1rem;
+                            padding-left: 1rem;
+                        }
+                        .circle {
+                            font-size: 1.3rem;
+
+                        }
+                    }
+                }
+            }
+        }
+        .last-news {
+            .green-line {
+                width: 4rem;
+                top: 13%;
+            }
+        }
     }
 }
