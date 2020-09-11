@@ -8,6 +8,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.wrapper-v-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .wrapper-g-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -308,7 +313,6 @@ main .regist-now-form form input {
   padding: 1rem;
   border-radius: 50px;
   border: 1px solid #8F8F8F;
-  margin-right: 1.5rem;
 }
 main .regist-now-form form input:focus {
   outline: none;
@@ -482,7 +486,7 @@ main .rates-form-inputs label {
   color: #6e788d;
 }
 main .rates-form-inputs .num-input {
-  width: 80%;
+  width: 70%;
   border: 1px solid #6e788d;
   border-radius: 5px;
   padding: 1rem 2rem;
@@ -493,6 +497,7 @@ main .rates-form-inputs .radio-inputs {
 }
 main .rates-form-inputs .radio-input-item {
   margin-right: 3rem;
+  margin-bottom: 0;
 }
 main .rates-form-inputs .radio-input-item .container {
   position: relative;
@@ -534,7 +539,6 @@ main .rates-form-inputs .radio-input-item input {
 }
 main .rates-form-info {
   width: 45%;
-  padding-top: 2rem;
 }
 main .rates-form-info span,
 main .rates-form-info p {
@@ -799,8 +803,8 @@ footer .footer-nav-contacts .contacts-item .email-img {
   main .rates-form {
     padding: 5rem 5%;
   }
-  main .utilities .suppliers {
-    padding: 3rem 3% !important;
+  main .last-photo-and-utilies .utilities .suppliers {
+    padding: 3rem 3%;
   }
 }
 @media (max-width: 1440px) {
@@ -821,6 +825,15 @@ footer .footer-nav-contacts .contacts-item .email-img {
   }
 }
 @media (max-width: 1280px) {
+  .green-button {
+    font-size: 1.2rem;
+  }
+  .slider-arrows {
+    margin: 3rem 30%;
+  }
+  header .md-title {
+    display: none;
+  }
   header .header-nav {
     display: none;
   }
@@ -828,6 +841,24 @@ footer .footer-nav-contacts .contacts-item .email-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  main .regist-now {
+    padding: 2rem 8%;
+  }
+  main .regist-now-form {
+    padding: 3rem 8%;
+  }
+  main .regist-now-form h1 {
+    font-size: 2rem;
+  }
+  main .regist-now-form h1 strong {
+    font-size: 2.6rem;
+  }
+  main .regist-now-form form {
+    padding: 1rem;
+  }
+  main .regist-now-form form input {
+    font-size: 1.2rem;
   }
   main .last-photo-and-utilies .utilities {
     -webkit-box-orient: vertical;
@@ -848,19 +879,27 @@ footer .footer-nav-contacts .contacts-item .email-img {
     padding-bottom: 2rem;
   }
   main .rates-form-inputs h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   main .rates-form-inputs input {
     font-size: 1.2rem;
   }
   main .rates-form-inputs .radio-input-item {
     margin: 5px;
+    margin-bottom: 0;
+  }
+  main .rates-form-info {
+    padding-top: 0;
   }
   main .rates-form-info span {
     font-size: 1.2rem;
+    margin-bottom: 3rem;
   }
   main .rates-form-info strong {
     font-size: 1.2rem;
+  }
+  main .rates-form-info .attention-box {
+    margin-top: 2rem;
   }
   main .rates-form-info .attention-box .attention-text p {
     font-size: 1.2rem;
@@ -869,10 +908,11 @@ footer .footer-nav-contacts .contacts-item .email-img {
     font-size: 1.2rem;
   }
   main .last-news {
-    padding: 3rem 5rem;
+    padding: 3rem 10rem;
   }
   main .last-news .green-line {
     top: 13rem;
+    width: 10rem;
   }
   main .last-news-bg {
     top: 84rem;
@@ -903,7 +943,7 @@ footer .footer-nav-contacts .contacts-item .email-img {
   }
   main .last-news-slider-photo-title {
     display: block;
-    width: 60%;
+    width: 80%;
   }
   footer .footer-title {
     width: 40%;
@@ -945,5 +985,110 @@ footer .footer-nav-contacts .contacts-item .email-img {
   }
   footer .footer-nav-contacts .contacts {
     width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .slider-arrows {
+    margin: 3rem 24%;
+  }
+  header .header-line {
+    padding: 0;
+    padding-left: 1rem;
+  }
+  header .header-line .phone-number {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+  }
+  header .header-line .login {
+    margin-right: 0.5rem;
+  }
+  header .header-nav-mini-screen {
+    padding: 1rem 5%;
+  }
+  main .regist-now-form {
+    padding: 3rem 4%;
+  }
+  main .regist-now-form h1 strong {
+    font-size: 2.4rem;
+  }
+  main .regist-now-form form input {
+    padding: 0.5rem 2%;
+  }
+  main .regist-now-form-name {
+    width: 23%;
+  }
+  main .regist-now-form-phone {
+    width: 40%;
+  }
+  main .regist-now-steps-item .regist-now-line-left {
+    left: -20%;
+  }
+  main .regist-now-steps-item .regist-now-line-right {
+    right: -20%;
+  }
+  main .last-photo-and-utilies {
+    padding: 2rem 5%;
+  }
+  main .last-photo-and-utilies .last-photo p {
+    padding: 0;
+  }
+  main .last-photo-and-utilies .last-photo .slider-arrows {
+    margin: 1.5rem 30%;
+  }
+  main .last-photo-and-utilies .utilities .suppliers {
+    margin: 1rem 2rem;
+    padding: 1rem 3rem;
+  }
+  main .rates-form h2 {
+    margin-bottom: 2rem;
+  }
+  main .rates-form-inputs {
+    width: 50%;
+  }
+  main .rates-form-inputs h4 {
+    font-size: 1.2rem;
+  }
+  main .rates-form-inputs .num-input {
+    padding: 0.5rem 1rem;
+  }
+  main .rates-form-inputs .radio-inputs .radio-input-item .container {
+    padding-left: 1.3rem;
+  }
+  main .rates-form-inputs .radio-inputs .radio-input-item .container .checkmark {
+    top: 10%;
+    left: 0;
+  }
+  main .rates-form-inputs .radio-inputs .radio-input-item label {
+    font-size: 1.2rem;
+  }
+  main .rates-form-info {
+    padding: 0;
+  }
+  main .rates-form-info span {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  main .rates-form-info .attention-box {
+    margin-top: 1rem;
+  }
+  main .rates-form-info .attention-box .attention-icon span {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+  }
+  main .last-news-slider-photo-title {
+    width: 80%;
+  }
+  main .last-news-bg {
+    top: 80%;
+  }
+  footer .footer-nav-contacts nav a {
+    line-height: 27px;
+  }
+  footer .footer-nav-contacts nav a:before {
+    top: 15px;
+  }
+  footer .footer-nav-contacts nav a:after {
+    top: 7px;
   }
 }

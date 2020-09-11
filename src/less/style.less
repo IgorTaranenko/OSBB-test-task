@@ -297,7 +297,6 @@ main {
                     padding: 1rem;
                     border-radius: 50px;
                     border: 1px solid #8F8F8F;
-                    margin-right: 1.5rem;
                 }
                 input:focus {
                     outline: none;
@@ -472,7 +471,7 @@ main {
                     color: @dark-grey;
                 }
                 .num-input {
-                    width: 80%;
+                    width: 70%;
                     border: 1px solid @dark-grey;
                     border-radius: 5px;
                     padding: 1rem 2rem;
@@ -483,6 +482,7 @@ main {
                 }
                 .radio-input-item {
                     margin-right: 3rem;
+                    margin-bottom: 0;
                     .container {
                         position: relative;
                         cursor: pointer;
@@ -526,7 +526,6 @@ main {
             }
             &-info {
                 width: 45%;
-                padding-top: 2rem;
                 span, p {
                     display: block;
                     font-size: 1.6rem;
@@ -795,9 +794,11 @@ footer {
                 padding: 5rem 5%;
             }
         }
-        .utilities {
-            .suppliers {
-                padding: 3rem 3% !important;
+        .last-photo-and-utilies {
+            .utilities {
+                .suppliers {
+                    padding: 3rem 3%;
+                }
             }
         }
     }
@@ -841,7 +842,16 @@ footer {
     }
 }
 @media (max-width: 1280px) {
+    .green-button {
+        font-size: 1.2rem;
+    }
+    .slider-arrows {
+        margin: 3rem 30%;
+    }
     header {
+        .md-title {
+            display: none;
+        }
         .header {
             &-nav {
                 display: none;
@@ -852,6 +862,24 @@ footer {
         }
     }
     main {
+        .regist-now {
+            padding: 2rem 8%;
+            &-form {
+                padding: 3rem 8%;
+                h1 {
+                    font-size: 2rem;
+                    strong {
+                        font-size: 2.6rem;
+                    }
+                }
+                form {
+                    padding: 1rem;
+                    input {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
         .last-photo-and-utilies {
             .utilities {
                 flex-direction: column;
@@ -871,7 +899,7 @@ footer {
                 padding-bottom: 2rem;
                 &-inputs {
                     h4 {
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                     }
                     input {
                         font-size: 1.2rem;
@@ -881,16 +909,20 @@ footer {
                     }
                     .radio-input-item {
                         margin: 5px;
+                        margin-bottom: 0;
                     }
                 }
                 &-info {
+                    padding-top: 0;
                     span {
                         font-size: 1.2rem;
+                        margin-bottom: 3rem;
                     }
                     strong {
                         font-size: 1.2rem;
                     }
                     .attention-box {
+                        margin-top: 2rem;
                         .attention-text p{
                             font-size: 1.2rem;
                             strong {
@@ -902,9 +934,10 @@ footer {
             }
         }
         .last-news {
-            padding: 3rem 5rem;
+            padding: 3rem 10rem;
             .green-line {
                 top: 13rem;
+                width: 10rem;
             }
             &-bg {
                 top: 84rem;
@@ -928,7 +961,7 @@ footer {
                     width: 100%;
                     &-title {
                         display: block;
-                        width: 60%;
+                        width: 80%;
                     }
                 }
             }
@@ -966,5 +999,155 @@ footer {
                 }
             }
         }
+    }
+}
+@media (max-width: 1000px) {
+    .slider-arrows {
+        margin: 3rem 24%;
+    }
+    header {
+        .header-line {
+            padding: 0;
+            padding-left: 1rem;
+            .phone-number {
+                margin-right: 0.5rem;
+                font-size: 1.1rem;
+            }
+            .login {
+                margin-right: 0.5rem;
+            }
+        }
+        .header-nav-mini-screen {
+            padding: 1rem 5%;
+        }
+    }
+    main {
+        .regist-now {
+            &-form {
+                padding: 3rem 4%;
+                h1 {
+                    strong {
+                        font-size: 2.4rem;
+                    }
+                }
+                form {
+                    input {
+                        padding: 0.5rem 2%;
+                    }
+                }
+                &-name {
+                    width: 23%;
+                }
+                &-phone {
+                    width: 40%;
+                }
+            }
+            &-steps {
+                &-item {
+                    .regist-now-line-left {
+                        left: -20%;
+                    }
+                    .regist-now-line-right {
+                        right: -20%;
+                    }
+                }
+            }
+        }
+        .last-photo-and-utilies {
+            padding: 2rem 5%;
+            .last-photo {
+                p {
+                    padding: 0;
+                }
+                .slider {
+                    &-arrows {
+                        margin: 1.5rem 30%;
+                    }
+                }
+            }
+            .utilities {
+                .suppliers {
+                    margin: 1rem 2rem;
+                    padding: 1rem 3rem;
+                }
+            }
+        }
+        .rates {
+            &-form {
+                h2 {
+                    margin-bottom: 2rem;
+                }
+                &-inputs {
+                    width: 50%;
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                    .num-input {
+                        padding: 0.5rem 1rem;
+                    }
+                    .radio-inputs {
+                        .radio-input-item {
+                            .container {
+                                padding-left: 1.3rem;
+                                .checkmark {
+                                    top: 10%;
+                                    left: 0;
+                                }
+                            }
+                            label {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+                &-info {
+                    padding: 0;
+                    span {
+                        font-size: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .attention-box {
+                        margin-top: 1rem;
+                        .attention-icon {
+                            span {
+                                width: 2rem;
+                                height: 2rem;
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .attention-text {
+
+                        }
+                    }
+                }
+            }
+        }
+        .last-news {
+            &-slider {
+                &-photo {
+                    &-title {
+                        width: 80%;
+                    }
+                }
+            }
+            &-bg {
+                top: 80%;
+            }
+        }
+    }
+    footer {
+        .footer-nav-contacts {
+            nav {
+                a {
+                    line-height: 27px;
+                }
+                a:before {
+                    top: 15px;
+                }
+                a:after {
+                    top: 7px;
+                }
+            }
+        }        
     }
 }
